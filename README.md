@@ -2,7 +2,7 @@
 
 ## Edit Data
 
-Open and modify `src/data/index.js`. Create a [PullRequest](https://github.com/OSWeekends/agenda/pulls).
+Open and modify `src/data/index.js`. Create a [PullRequest](https://github.com/guidesmiths/gs-events-agenda/pulls).
 
 Supported social links:
   - url

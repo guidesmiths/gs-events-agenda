@@ -3,7 +3,7 @@
     <b-container>
       <BaseHeader :headerData="headerData" />
       <ScheduleList :tracks="data.tracks"/>
-      <MeetupLink :eventType="data.eventType"/>
+      <MeetupLink :eventType="data.eventType" :eventLink="data.eventLink"/>
       <Sponsors v-if="data.sponsors.length !== 0" :sponsors="data.sponsors" />
     </b-container>
     <BaseFooter/>

@@ -6,7 +6,7 @@ const eventTypes = {
 const data = {
   title: 'Agenda',
   eventType: eventTypes.online,
-  date: '11 Diciembre 2020',
+  date: '11 Noviembre 2020',
   description: 'Guidesmeetups - El evento online de GuideSmiths 👉',
   meetupLink: 'https://guidesmeetups01.eventbrite.es/',
   eventLink: 'https://www.twitch.tv/guidesmiths',
@@ -53,10 +53,10 @@ const data = {
           ]
         },
         {
-          title: 'JS Pill: 3 ways to dedupe an array',
+          title: '💊 JS Pill: Eliminar duplicados de un array',
           description: [
             'Píldoras de JavaScript en 5 minutos. Un concepto explicado de forma simple y sencillo.',
-            'En esta ocasión vamos a ver *3 formas de deduplicar un array*. Os voy a contar rápidamente cómo podemos eliminar los duplicados que podemos encontrar en un array usando Javascript-'
+            'En esta ocasión vamos a ver 3 formas de eliminar duplicados de un array. Os voy a contar rápidamente cómo podemos eliminar los duplicados que podemos encontrar en un array usando Javascript'
           ],
           startTime: { h: '18', m: '40' },
           tags: ['⛓ JavaScript', '💊 Pill', '⚽️ Bético'],
@@ -77,13 +77,13 @@ const data = {
           ]
         },
         {
-          title: 'FrontEnd y Microservicios',
+          title: '💬 FrontEnd y Microservicios',
           description: [
             'En esta charla, os comparto mi experiencia desarrollando el frontend de una app que usa una arquitectura de microservicios. ' +
             'Consiguiendo que los frontend developers puedan centrarse en lo que mejor saben hacer, crear experiencias de usuario increíbles.'
           ],
           startTime: { h: '18', m: '45' },
-          tags: [':cypress: Cypress', '💻 Desarrollo', ':heavy_check_mark: testing'],
+          tags: ['🌲 Cypress', '💻 Desarrollo', '✅ testing'],
           speakers: [
             {
               name: 'Kevin Martínez',
@@ -122,7 +122,7 @@ const data = {
           ]
         },
         {
-          title: 'Node.js for GIS: from google locations to GeoJSON using Streams',
+          title: '💬 Node.js for GIS: from google locations to GeoJSON using Streams',
           description: [
             'Dealing with huge files has always been a challenging task to take care of. The memory consumption that this kind of processing requires is something to take into account independently from the language we are using and Node.js is no exception.',
             'Let\'s see how node\'s streams can make this task bearable even for a process with minimal memory availability. Specifically we\'ll take advantage of streams in order to run a process that converts a Google Takeout Location History JSON into a GeoJSON.'

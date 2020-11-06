@@ -30,7 +30,7 @@
     <!-- END: Timezone selector -->
 
     <div class="d-flex justify-content-between align-self-center justify-content-md-end">
-      <div class="description-item pr-3">
+      <div class="description-item pr-3" v-if="headerData.description">
         <div class="mb-0"> {{ headerData.description }}</div>
       </div>
       <div class="meetup-item align-self-start">

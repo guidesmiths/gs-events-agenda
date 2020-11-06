@@ -6,26 +6,23 @@ const eventTypes = {
 const data = {
   title: 'Agenda',
   eventType: eventTypes.online,
-  date: '14 Noviembre 2020',
-  description: '💃 Sexto evento temporada ¡Apúntate! 👉',
-  meetupLink: 'https://www.meetup.com/es-ES/Open-Source-Weekends/events/274306672/',
-  eventLink: 'https://www.twitch.tv/osweekends',
-  startTime: '10:00',
-  endTime: '12:00',
-  isTimezoneSelectorEnabled: true,
+  date: '11 Noviembre 2020',
+  description: 'Guidesmeetups - El evento online de GuideSmiths 👉',
+  meetupLink: 'https://guidesmeetups01.eventbrite.es/',
+  eventLink: 'https://www.twitch.tv/guidesmiths',
+  startTime: '18:30',
+  endTime: '20:00',
+  isTimezoneSelectorEnabled: false,
   tracks: [
     {
-      name: 'The Awesome Track Online',
+      name: 'Track #01',
       content: [
         {
-          title: 'Bienvenida y café virtual ☕️',
+          title: '💃 Bienvenida',
           description: [
-            '- Puntos del día 🔥',
-            '- Agenda 📇',
-            '- OSWorld 👨‍🎤'
+            'Os damos la bienvenida a nuestro primer evento online 👶. Nos estrenamos en twitch para abrirnos a la comunidad y compartir buenos momentos.'
           ],
-          startTime: { h: '10', m: '00' },
-          // endTime: { h: '10', m: '20' },
+          startTime: { h: '18', m: '30' },
           speakers: [
             {
               name: 'Jorge Baumann',
@@ -40,124 +37,156 @@ const data = {
                 // url: ['1', 2 , 4]
               }
             },
-            // {
-            //   name: 'Teba Gómez',
-            //   bio: [
-            //     'Software engineer at #Devo'
-            //   ],
-            //   social: {
-            //     twitter: 'https://twitter.com/KoolTheba',
-            //     github: 'https://github.com/kooltheba'
-            //   }
-            // },
             {
-              name: 'Chechu',
+              name: 'Daniel Herrero ⚒️',
               bio: [
-                'Desarrollador frontend. Moderador de los directos. El que te banea si te portas mal en OSWeekends online.'
+                'FullStack Engineer at GuideSmiths. Sometimes racing horse 🐎 sometimes sloth 🦥.'
               ],
               social: {
-                twitter: 'https://twitter.com/Xexuline'
+                linkedin: 'https://www.linkedin.com/in/danielherrerohernando/',
+                medium: 'https://medium.com/@danielherrerohernando',
+                twitter: 'https://twitter.com/DanielHerreroH1',
+                github: 'https://github.com/danielherrerohernando',
+                twitch: 'https://twitch.tv/danielherrerohernando'
+              }
+            }
+          ]
+        },
+        {
+          title: '💊 JS Pill: Eliminar duplicados de un array',
+          description: [
+            'Píldoras de JavaScript en 5 minutos. Un concepto explicado de forma simple y sencillo.',
+            'En esta ocasión vamos a ver 3 formas de eliminar duplicados de un array. Os voy a contar rápidamente cómo podemos eliminar los duplicados que podemos encontrar en un array usando Javascript'
+          ],
+          startTime: { h: '18', m: '40' },
+          tags: ['⛓ JavaScript', '💊 Pill', '⚽️ Bético'],
+          speakers: [
+            {
+              name: 'Carlos Jiménez',
+              bio: [
+                'Team Lead en GuideSmiths. Part-time Backend (ex FullStack) Engineer. Trabajé <em>contando</em> votos. 100% Bético.'
+              ],
+              social: {
+                twitter: 'https://twitter.com/betisman',
+                github: 'https://github.com/betisman',
+                linkedin: 'https://www.linkedin.com/in/josecarlosjimenezgomez/',
+                twitch: 'https://www.twitch.tv/betisman',
+                instagram: 'https://www.instagram.com/betisman/'
+              }
+            }
+          ]
+        },
+        {
+          title: '💬 FrontEnd y Microservicios',
+          description: [
+            'En esta charla, os comparto mi experiencia desarrollando el frontend de una app que usa una arquitectura de microservicios. ' +
+            'Consiguiendo que los frontend developers puedan centrarse en lo que mejor saben hacer, crear experiencias de usuario increíbles.'
+          ],
+          startTime: { h: '18', m: '45' },
+          tags: ['🌲 Cypress', '💻 Desarrollo', '✅ testing'],
+          speakers: [
+            {
+              name: 'Kevin Martínez',
+              bio: [
+                'Desarrollador Javascript en Guidesmiths. Apasionado del desarrollo web y el aprendizaje continuo. Suelo hablar sobre testing con Javascript y Cypress, me encanta dar formaciones y acudir a eventos para conocer lo mejor de la comunidad y seguir aprendiendo.'
+              ],
+              social: {
+                twitter: 'https://twitter.com/kjmesc',
+                github: 'https://github.com/kevinccbsg',
+                linkedin: 'https://www.linkedin.com/in/kevinjmartinez/',
+                twitcha: 'https://www.twitch.tv/kajota_dev'
+              }
+            }
+          ]
+        },
+        {
+          title: '🙏 Las preguntas de Dios',
+          description: [
+            'Minijuego Online - Juego en el que, si participas, competirás con los demás espectadores del evento. Los 3 más rápidos subiran al podio.'
+          ],
+          startTime: { h: '19', m: '05' },
+          tags: ['💻 Desarrollo', '👾 Minijuego', '🤔 Preguntas'],
+          speakers: [
+            {
+              name: 'Clara Dios',
+              bio: [
+                'Developer at GuideSmiths'
+              ],
+              social: {
+                twitter: 'https://twitter.com/claradios',
+                twitch: 'https://twitch.tv/claradios',
+                instagram: 'https://instagram.com/c.diosss',
+                github: 'https://github.com/claradios'
+              }
+            }
+          ]
+        },
+        {
+          title: '💬 Node.js for GIS: from google locations to GeoJSON using Streams',
+          description: [
+            'Dealing with huge files has always been a challenging task to take care of. The memory consumption that this kind of processing requires is something to take into account independently from the language we are using and Node.js is no exception.',
+            'Let\'s see how node\'s streams can make this task bearable even for a process with minimal memory availability. Specifically we\'ll take advantage of streams in order to run a process that converts a Google Takeout Location History JSON into a GeoJSON.'
+          ],
+          startTime: { h: '19', m: '20' },
+          tags: ['💻 Desarrollo', '📍 GIS', '💦 Streams'],
+          speakers: [
+            {
+              name: 'Matteo Di Paolantonio',
+              bio: [
+                'Team Lead · Software Engineer at GuideSmiths.'
+              ],
+              social: {
+                linkedin: 'https://es.linkedin.com/in/matteo-di-paolantonio-85b433122',
+                github: 'https://github.com/MatteoDiPaolo'
+              }
+            }
+          ]
+        },
+        {
+          title: '🥫 Salsa · Punto y coma en JavaScript: ¿Sí o no?',
+          description: [
+            'Debate moderado por Laura Corbí. Queremos que nos cuentes tu versión... ¿estás a favor o en contra del uso del punto y coma en JavaScript?'
+          ],
+          startTime: { h: '19', m: '40' },
+          endTime: { h: '20', m: '00' },
+          tags: ['🥫 Salseo', '🗣 Debate', '⛓ JavaScript'],
+          speakers: [
+            {
+              name: 'Laura Corbí',
+              bio: [
+                'Software developer, philosophy student, psychologist, and some other random things 👀. Modera Salsa 🥫.'
+              ],
+              social: {
+                twitter: 'https://twitter.com/dusty_trinkets',
+                github: 'https://github.com/dustytrinkets',
+                medium: 'https://medium.com/@lauracorbi',
+                linkedin: 'https://www.linkedin.com/in/lauracorbi/'
               }
             },
             {
-              name: 'Coding Carlos',
+              name: 'Dailos R. Díaz Lara',
               bio: [
-                'Showman, barbudo, programador y contador de cuentos. Conecto gente en @communitytools. Se me ve mucho en @commitsans. Tengo tierras.'
+                '👨🏻‍💻 #JavaScript / #TypeScript Developer. 🇮🇨 @canariasjs co-founder and #JSDayCanarias co-organizer. 💻 #NodeJS, #React, #Jest, GraphQL.',
+                'Le encanta el <mark>;</mark> en JavaScript;'
               ],
               social: {
-                twitter: 'https://twitter.com/codingcarlos',
-                url: 'https://codingcarlos.com/',
-                twitch: 'https://twitch.tv/codingcarlos'
+                twitter: 'https://twitter.com/ddialar'
+                // twitch: 'https://twitch.tv/gndxdev',
+                // instagram: 'https://instagram.com/gndx',
+                // github: 'https://github.com/gndx'
               }
             }
           ]
-        },
-        {
-          title: '¿Por que no utilizar Flux? (Redux, Vuex, etc)',
-          description: [
-            'Vamos a analizar desde un punto de vista técnico qué es el modelo Flux propuesto por Facebook como el siguiente paso para desarrollar aplicaciones web escalables. Y también descubriremos porqué este es un mal patrón para la gestión del estado en tus aplicaciones.',
-            'Pero no nos quedaremos ahí, te mostraré que alternativas tenemos y abriremos la mente a mejores modelos y patrones que existen actualmente en el mercado 😎. ¡Vamos a dar el siguiente paso 🦿 en el manejo de estados de las aplicaciones reactivas!'
-          ],
-          startTime: { h: '10', m: '20' },
-          tags: ['💻 Desarrollo', '⛓ Patrones'],
-          speakers: [
-            {
-              name: 'Samuel Burbano',
-              bio: [
-                '💻 Software Developer, Web Enthusiast, Penguin Lover. Senior Frontend Developer en Ring, Amazon'
-              ],
-              social: {
-                twitter: 'https://twitter.com/iosamuel',
-                github: 'https://github.com/iosamuel',
-                linkedin: 'https://linkedin.com/in/iosamuel/',
-                twitch: 'https://twitch.com/iosamuel',
-                youtube: 'https://youtube.com/iosamuel',
-                instagram: 'https://instagram.com/_iosamuel',
-                facebook: 'https://facebook.com/iosamuel.dev',
-                url: 'https://iosamuel.dev'
-              }
-            }
-          ]
-        },
-        {
-          title: 'Gatsby, un generador de sitios estáticos para React 💜',
-          description: [
-            'Los sitios estáticos no son nuevos. Eran lo que usábamos para construir la forma web antes de que los CMS dinámicos (WordPress, Drupal, etc.) se hicieran cargo.',
-            '¿Qué hay de nuevo, entonces? Algunas herramientas modernas, como los generadores de sitios estáticos, surgieron en los últimos años y expandieron las capacidades de los sitios estáticos. Con un ecosistema cada vez mayor que rodea el desarrollo de estos sitios y con el poder de frameworks como ReactJS, podemos construir sitios web estáticos que se vuelven hyperdinámicos gracias a JS, Headless CMS y la era del Serverless.'
-          ],
-          startTime: { h: '10', m: '40' },
-          tags: ['✨ Gatsby', '💻 Desarrollo', '🌠 SSG'],
-          speakers: [
-            {
-              name: 'Mafe Serna',
-              bio: [
-                'Javascript Developer 👩🏻‍💻/ Happy Developer at @NodeSource 💚/ Co-organizer @medellinjs / @avanet / jamstackMedellin / @commitFm'
-              ],
-              social: {
-                twitter: 'https://twitter.com/mafesernaarbole',
-                github: 'https://github.com/mafesernaarboleda',
-                linkedin: 'https://www.linkedin.com/in/mafesernaarboleda/',
-                url: 'https://mafe.dev/'
-              }
-            }
-          ]
-        },
-        {
-          title: 'Cómo contribuir con el código abierto creando contenido',
-          description: [
-            'Abordar el tema de creación de contenidos desde la perspectiva del apoyo al open source, como iniciar y como mantenerse motivado creando contenido técnico.'
-          ],
-          startTime: { h: '11', m: '00' },
-          tags: ['💻 Desarrollo', '🙌 Open Source', '👨‍👨‍👧‍👧 Comunidad'],
-          speakers: [
-            {
-              name: 'Oscar Barajas (GnDx)',
-              bio: [
-                'Foundation Layer at @platzi - Lead at Developer Circles from Facebook, Speaker/Blogger. I teach React & Svelte in @platzi - #EStreamerCoders #Frontend'
-              ],
-              social: {
-                twitter: 'https://twitter.com/gndx',
-                twitch: 'https://twitch.tv/gndxdev',
-                instagram: 'https://instagram.com/gndx',
-                github: 'https://github.com/gndx'
-              }
-            }
-          ]
-        },
-        {
-          title: 'Networking & Beers online 💃🍻',
-          startTime: { h: '11', m: '20' },
-          endTime: { h: '11', m: '30' }
         }
       ]
     }
   ],
   sponsors: [
-    //  {
-    //    name: 'Sponsor1',
-    //    link: 'www.google.com',
-    //    img: '../assets/sponsors/spotify.svg'
-    //  }
+    {
+      name: 'GuideSmiths',
+      link: 'https://www.guidesmiths.com/',
+      img: 'gs.png'
+    }
   ]
 }
 

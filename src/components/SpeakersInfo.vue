@@ -15,8 +15,7 @@
             </div>
           </div>
           <div class="speaker-bio">
-            <p v-for="(bio, index) in speaker.bio" :key="`bio-${index}`">
-              {{ bio }}
+            <p v-for="(bio, index) in speaker.bio" :key="`bio-${index}`" v-html="bio">
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@
     <b-row class="sponsors">
       <b-col v-for="sponsor in sponsors" :key="sponsor.name">
         <a :href="sponsor.link" class="text-center">
-          <img src="../assets/sponsors/spotify.svg" :alt="sponsor.name">
+          <img :src="require(`../assets/sponsors/${sponsor.img}`)" :alt="sponsor.name" width="200px">
         </a>
       </b-col>
     </b-row>

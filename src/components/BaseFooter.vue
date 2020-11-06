@@ -1,22 +1,19 @@
 <template>
   <footer class="text-center">
-    <p>Made with 💙 by OSWeekends
-      <a class="blue-text" href="https://github.com/OSWeekends/agenda/graphs/contributors" target="_blank">Guilders</a>
+    <p>Made with 💙 by
+      <a class="blue-text" href="https://github.com/OSWeekends/agenda/graphs/contributors"
+        target="_blank">OSWeekends</a>
       🦄
     </p>
     <p>
-      <span class="parrot-img">
-        <img src="../assets/parrot.gif" alt="parrot">
-      </span>
-      <b-button variant="link" class="blue-text" to="/about">About</b-button>
-      <b-button variant="link" class="blue-text" href="https://github.com/OSWeekends/agenda?ref=agenda">
-        Editar en Github
+      <span class="parrot-img"> <img src="../assets/parrot.gif" alt="parrot"> </span>
+      <!-- <b-button variant="link" class="blue-text" to="/about">About</b-button> -->
+      <b-button variant="link" class="blue-text" href="https://github.com/guidesmiths/gs-events-agenda">
+        Código fuente
       </b-button>
-      <b-button variant="link" class="blue-text" href="https://osweekends.com/?ref=agenda">OSWeekends</b-button>
-      <b-button variant="link" class="blue-text" href="https://twitter.com/OS_weekends?ref=agenda">Twitter</b-button>
-      <span class="parrot-img">
-        <img src="../assets/parrotright.gif" alt="parrot">
-      </span>
+      <b-button variant="link" class="blue-text" href="https://twitter.com/guidesmiths">Twitter</b-button>
+      <b-button variant="link" class="blue-text" href="https://instagram.com/guidesmiths">Instagram</b-button>
+      <span class="parrot-img"> <img src="../assets/parrotright.gif" alt="parrot"> </span>
     </p>
   </footer>
 </template>
